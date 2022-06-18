@@ -1,0 +1,21 @@
+#La población total entre hombres y mujeres.
+#El porcentaje total de la población entre Culiacán y Mazatlán.
+# La temperatura media anual y los tipos de clima. 
+Mujeres = 1532128
+Hombres = 1494815
+Culiacan = 33.15
+Mazatlan = 16.57
+temperatura_media = 25.45
+superficie = 57365
+
+Poblacion_total= Mujeres + Hombres
+porcentaje_total = Culiacan + Mazatlan
+climas = ["cálido", "subhúmedo", "seco", "semiseco" ]
+
+print('\n'"La superficie total del Estado de Sinaloa es: " , superficie, "Km2")
+print('\n'"La poblacion total es: " , Poblacion_total)
+print('\n'"La suma de porcentaje es: ",porcentaje_total, "%")
+print('\n'"La temperatura media anual es: ", temperatura_media, "grados centigrados")
+
+print('\n'"Tipo de climas")
+print('\n'.join(map(str, climas)))
