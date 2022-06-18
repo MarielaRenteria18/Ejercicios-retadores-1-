@@ -1,0 +1,27 @@
+#Solicitar al usuario que ingrese el nombre del municipio y agregarlo a una lista llamada “municipios”.
+#Solicitar al usuario que ingrese el número de habitantes del municipio registrado en el paso anterior y agregarlo a una lista llamada “habitantes”.
+# Crear dos nuevas variables que contengan la sumatoria y el promedio de los habitantes de los municipios ingresados, haciendo uso de las listas creadas en el paso anterior.
+#Mostrar el valor de estas dos nuevas variables al usuario usando print(). 
+municipio1 = "Escuinapa"
+municipio2 = "Cosalá"
+municipio3 = "Mocorito"
+numero_habitantes_Escuinapa = 59988
+numero_habitantes_Cosalá = 17012
+numero_habitantes_Mocorito = 40358
+
+lista_municipios =  ["Escuinapa", "Cosalá", "Mocorito"]
+lista_habitantes = [59988, 17012, 40358]
+sumatoria = numero_habitantes_Escuinapa + numero_habitantes_Cosalá + numero_habitantes_Mocorito
+promedio = sumatoria / 3
+nombre_municipio = input("Ingresa el nombre del municipio: ")
+numero_habitantes = input("Ingresa el número de habitantes : ")
+
+nombre_municipio = input("Ingresa el nombre del municipio: ")
+numero_habitantes = input("Ingresa el número de habitantes : ")
+
+nombre_municipio = input("Ingresa el nombre del municipio: ")
+numero_habitantes = input("Ingresa el número de habitantes : ")
+
+print('\n'"La sumatoria total es: ", sumatoria)
+print('\n'"El promedio total es: ", promedio)
+
