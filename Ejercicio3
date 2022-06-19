@@ -1,0 +1,22 @@
+#Ejercicio
+#Retador #3
+#Manejo de operadores
+
+p_total = int(0)
+peso_cemento = 40
+peso_yeso = 30
+
+numero_costal_cemento = int (input("Ingresar el numero de costales de cemento: "))
+numero_costal_yeso = int (input("Ingresa el numero de costales de yeso: "))
+print('\n')
+
+cemento = numero_costal_cemento * peso_cemento
+yeso = numero_costal_yeso * peso_yeso
+p_total = cemento + yeso
+
+if p_total >= 1627 and p_total <= 3254:
+  print("Peso total de los costales es: ", p_total, "kg")
+  print("¿Se puede realizar el envío?: True")
+else:
+ print("Peso total de los costales es: ", p_total, "kg")
+#print("¿Se puede realizar el envío?: False")
