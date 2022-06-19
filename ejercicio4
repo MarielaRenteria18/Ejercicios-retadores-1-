@@ -1,0 +1,39 @@
+#Ejercicio Retador 4
+maiz = "Maíz Blanco"
+pepino = "Pepino"
+tomate = "Tomate Verde"
+precio_maiz= 285.55
+precio_pepino=334.72
+precio_tomate=129.00
+envio= 1500
+
+num_cajas = int(input("Ingresa el número de cajas a vender: "))
+producto = str(input("ID del producto: "))
+#print('\n')
+total_envio_m= (num_cajas*258.55)+envio
+total_maiz=num_cajas*258.55
+total_envio_p= (num_cajas*334.72)+envio
+total_pepino=num_cajas*334.72
+total_envio_t= (num_cajas*129.00)+envio
+total_tomate=num_cajas*129.00
+
+if producto == str(1):
+ print("Producto:"+maiz)
+ print("Precio por caja:"+str(precio_maiz))
+ if num_cajas<= 100:
+  print("Costo total a pagar es: ", total_envio_m)
+
+if producto == str(2):
+ print("Producto:"+pepino)
+ print("Precio por caja:"+str(precio_pepino))
+ if num_cajas<= 100:
+  print("Costo total a pagar es: ",total_envio_p)
+
+if producto == str(3):
+ print("Producto:", +tomate)
+ print("Precio por caja:"+str(precio_tomate))
+ if num_cajas<= 100:
+  print("Costo total a pagar es: ",total_envio_t)
+
+if producto > str(3):
+  print("ID no encontrado")
