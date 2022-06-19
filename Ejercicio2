@@ -1,0 +1,18 @@
+#Solicitar al usuario que ingrese el nombre del municipio y agregarlo a una lista llamada “municipios”.
+#Solicitar al usuario que ingrese el número de habitantes del municipio registrado en el paso anterior y agregarlo a una lista llamada “habitantes”.
+# Crear dos nuevas variables que contengan la sumatoria y el promedio de los habitantes de los municipios ingresados, haciendo uso de las listas creadas en el paso anterior.
+#Mostrar el valor de estas dos nuevas variables al usuario usando print(). 
+Municipios = [ ]
+Habitantes = [ ]
+
+for x in range(3):
+ nombre_municipio = str (input("Ingresa el nombre de municipio: "))
+ Municipios.append(nombre_municipio)
+ numero_habitantes = int(input("Ingresar el numero de habitantes: "))
+ Habitantes.append(numero_habitantes)
+suma_habitantes = sum(Habitantes)
+print("La suma total de habitantes es:", suma_habitantes)
+
+promedio_habitantes = suma_habitantes / 3
+
+print("El promedio de habitantes es: ", promedio_habitantes)
