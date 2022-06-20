@@ -1,0 +1,80 @@
+#Ejercicio integrador Parte 1
+maiz = "Maíz Blanco"
+pepino = "Pepino"
+tomate = "Tomate Verde"
+precio_maiz= 285.55
+precio_pepino=334.72
+precio_tomate=129.00
+envio= 1500
+most= "True"
+mostrar="False"
+
+num_cajas = float(input("Ingresa el número de cajas a vender: "))
+producto = int(input("ID del producto: "))
+#print('\n')
+total_envio_m= (num_cajas*258.55)+envio
+total_maiz=num_cajas*258.55
+total_desc_m= total_maiz*.20
+total_desc_maiz= total_maiz*total_desc_m
+
+total_envio_p= (num_cajas*334.72)+envio
+total_pepino=num_cajas*334.72
+total_desc_p= total_pepino*.20
+total_desc_pepino= total_pepino*total_desc_p
+
+total_envio_t= (num_cajas*129.00)+envio
+total_tomate=num_cajas*129.00
+total_desc_t= total_tomate*.20
+total_desc_tomate= total_tomate*total_desc_t
+
+if producto == 1 and num_cajas<=100:
+ print("Producto:"+maiz)
+ print("Precio por caja:"+str(precio_maiz))
+ print("Se aplica descuento de 20%: ", mostrar)
+ print("Costo total a pagar: ", total_envio_m)
+if producto == 1 and num_cajas >100 and num_cajas<150:
+ print("Producto:"+maiz)
+ print("Precio por caja:"+str(precio_maiz))
+ print("Se aplica descuento de 20%: ", mostrar)
+ print("Costo total a pagar: ", total_maiz)
+if producto == 1 and num_cajas>= 150:
+ print("Producto:"+maiz)
+ print("Precio por caja:"+str(precio_maiz))
+ print("Se aplica descuento de 20%: ", mostrar)
+ print("Costo total a pagar: ", total_desc_maiz)
+  
+if producto == 2 and num_cajas<=100:
+ print("Producto:"+pepino)
+ print("Precio por caja:"+str(precio_pepino))
+ print("Se aplica descuento de 20%: ", mostrar)
+ print("Costo total a pagar: ", total_envio_p)
+if producto == 2 and num_cajas >100 and num_cajas<150:
+ print("Producto:"+pepino)
+ print("Precio por caja:"+str(precio_pepino))
+ print("Se aplica descuento de 20%: ", mostrar)
+ print("Costo total a pagar: ", total_pepino)
+if producto == 2 and num_cajas>= 150:
+ print("Producto:", +pepino)
+ print("Precio por caja:"+str(precio_pepino))
+ print("Se aplica descuento de 20%: ", mostrar)
+ print("Costo total a pagar: ", total_desc_pepino)
+
+if producto == 3 and num_cajas<=100:
+ print("Producto:"+tomate)
+ print("Precio por caja:"+str(precio_tomate))
+ print("Se aplica descuento de 20%: ", mostrar)
+ print("Costo total a pagar: ", total_envio_t)
+if producto == 3 and num_cajas >100 and num_cajas<150:
+ print("Producto:"+tomate)
+ print("Precio por caja:"+str(precio_tomate))
+ print("Se aplica descuento de 20%: ", mostrar)
+ print("Costo total a pagar: ", total_tomate)
+if producto == 3 and num_cajas>= 150:
+ print("Producto:", +tomate)
+ print("Precio por caja:"+str(precio_tomate))
+ print("Se aplica descuento de 20%: ", mostrar)
+ print("Costo total a pagar: ", total_desc_tomate)
+  
+if producto > 3:
+  print("ID no encontrado")
+  
